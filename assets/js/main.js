@@ -19,7 +19,9 @@ function initMobileNav() {
 }
 
 function initScrollAnimations() {
-  const targets = document.querySelectorAll('.tema-card, .browser-mock');
+  const targets = document.querySelectorAll(
+    '.tema-card, .browser-mock, .brand-slide, .persona-card, .phone-mock, .sitemap-page'
+  );
   if (!targets.length) return;
 
   if (!('IntersectionObserver' in window)) {
@@ -36,8 +38,9 @@ function initScrollAnimations() {
     });
   }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
 
-  targets.forEach((el, i) => {
-    el.style.transitionDelay = (i * 90) + 'ms';
+  targets.forEach(el => {
+    const siblingIndex = Array.from(el.parentElement.children).indexOf(el);
+    el.style.transitionDelay = Math.min(siblingIndex * 80, 320) + 'ms';
     observer.observe(el);
   });
 }

@@ -8,13 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Museo+Moderno:wght@600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=1">
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
 </head>
 <body>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="brand">flow<span class="brand-tag">Proyecto final</span></a>
+      <a href="index.html" class="brand"><img src="assets/images/logo-flow.png" alt="Flow" class="brand-logo-img"><span class="brand-tag">Proyecto final</span></a>
       <nav class="main-nav" aria-label="Navegación principal">
         <ul>
           <li><a href="tema1.html">Tema 1 · Creatividad Digital</a></li>
@@ -27,19 +27,13 @@
   </header>
 
   <main>
-    <section class="tema-hero">
-      <div class="container">
-        <p class="breadcrumb"><a href="index.html">Inicio</a> / Tema 3</p>
-        <p class="eyebrow">Tema 3</p>
-        <h1>Proyecto Digital: Creación de una Página Web</h1>
-        <p>El resultado de los dos temas anteriores: la página web de Flow, construida, publicada y navegable de punta a punta.</p>
-      </div>
+    <section class="tema-hero" style="background-image:url('assets/images/header-tema3.jpg');">
+      <h1>Proyecto Digital: Creación de una Página Web</h1>
     </section>
 
     <section class="section-block">
       <div class="container">
         <h2>La web, en vivo</h2>
-        <p class="section-lead">Esto no es una captura de pantalla: es la página real, cargada dentro de este mismo bloque. Navegá, hacé clic, probá el asistente virtual.</p>
 
         <div class="browser-mock">
           <div class="browser-mock-bar">
@@ -54,6 +48,20 @@
         <p style="text-align:center; margin-top:24px;">
           <a href="https://carlitadebortoli.github.io/flow-landing/" target="_blank" rel="noopener" class="btn btn-outline">Abrir en pantalla completa ↗</a>
         </p>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="container">
+        <h2>La web, en vivo — versión móvil</h2>
+        <p class="section-lead">El mismo sitio, la misma URL, respondiendo a un viewport de teléfono real.</p>
+
+        <div class="phone-mock-wrap">
+          <div class="phone-mock">
+            <iframe src="https://carlitadebortoli.github.io/flow-landing/" title="Sitio web de Flow en vivo — versión móvil"></iframe>
+          </div>
+          <p class="section-lead" style="margin:0;">Vista móvil (390 × 844px)</p>
+        </div>
       </div>
     </section>
 
@@ -97,6 +105,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/main.js?v=1"></script>
+  <script src="assets/js/main.js?v=2"></script>
 </body>
 </html>

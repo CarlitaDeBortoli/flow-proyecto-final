@@ -7,14 +7,14 @@
   <meta name="robots" content="noindex, follow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Museo+Moderno:wght@600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=1">
+  <link href="https://fonts.googleapis.com/css2?family=Museo+Moderno:wght@600;700&family=Poppins:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
 </head>
 <body>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="brand">flow<span class="brand-tag">Proyecto final</span></a>
+      <a href="index.html" class="brand"><img src="assets/images/logo-flow.png" alt="Flow" class="brand-logo-img"><span class="brand-tag">Proyecto final</span></a>
       <nav class="main-nav" aria-label="Navegación principal">
         <ul>
           <li><a href="tema1.html" class="is-active">Tema 1 · Creatividad Digital</a></li>
@@ -27,13 +27,8 @@
   </header>
 
   <main>
-    <section class="tema-hero">
-      <div class="container">
-        <p class="breadcrumb"><a href="index.html">Inicio</a> / Tema 1</p>
-        <p class="eyebrow">Tema 1</p>
-        <h1>Creatividad Digital</h1>
-        <p>La marca antes que la pantalla: quién es Flow, para quién es y por qué se ve, suena y se siente como se siente.</p>
-      </div>
+    <section class="tema-hero" style="background-image:url('assets/images/header-tema1.jpg');">
+      <h1>Creatividad Digital</h1>
     </section>
 
     <section class="section-block">
@@ -58,24 +53,223 @@
       </div>
     </section>
 
-    <section class="section-block">
+    <!-- ============ BRANDBOOK — secciones scrollables ============ -->
+    <section class="brandbook">
       <div class="container">
-        <h2>Resto del Tema 1</h2>
-        <p class="section-lead">Estas secciones se están terminando de redactar.</p>
-        <div class="placeholder-list">
-          <div class="placeholder-item">
-            <strong>Buyer Persona</strong>
-            <span class="placeholder-tag">En desarrollo</span>
-          </div>
-          <div class="placeholder-item">
-            <strong>Moodboard</strong>
-            <span class="placeholder-tag">En desarrollo</span>
-          </div>
-          <div class="placeholder-item">
-            <strong>Presentación de la marca y toma de decisiones</strong>
-            <span class="placeholder-tag">En desarrollo</span>
+
+        <!-- 1. Moodboard -->
+        <div class="brand-slide brand-slide--image">
+          <img src="assets/images/brand-moodboard.jpg" alt="Moodboard de la marca Flow" class="brand-slide-img">
+        </div>
+
+        <!-- 2. Naming, tono y personalidad -->
+        <div class="brand-slide">
+          <span class="brand-slide-kicker">Flow</span>
+          <p class="brand-slide-text">Flow nace como un nombre que conecta con el lenguaje propio de la Generación Z. La palabra funciona en varios niveles a la vez: remite al flujo del dinero (cash flow), evoca el estado de flow como sinónimo de fluidez sin fricción, y recoge el uso coloquial de "tener flow" como actitud y estilo propio. Es corto, fácil de recordar y funciona igual en español e inglés, lo que le da mucho juego en redes y campañas, mientras aporta a la marca una identidad propia, cercana y alejada del lenguaje bancario tradicional.</p>
+          <div class="brand-slide-grid-2">
+            <div class="brand-callout">
+              <h4>Tono</h4>
+              <p>Flow es como ese amigo que entiende de dinero sin ponerse serio: cercano, directo y con actitud, que acompaña sin sermonear.</p>
+            </div>
+            <div class="brand-callout">
+              <h4>Personalidad</h4>
+              <p>Flow habla claro y sin tecnicismos, con la naturalidad y el humor propios de la Generación Z, transmitiendo siempre confianza de fondo.</p>
+            </div>
           </div>
         </div>
+
+        <!-- 3. Logo + zona de seguridad -->
+        <div class="brand-slide brand-slide--split">
+          <div>
+            <span class="brand-slide-kicker">Logo</span>
+            <p class="brand-slide-text">El logo de Flow se escribe en minúsculas y con formas redondeadas que se conectan entre sí, como si las letras fluyeran unas con otras, sin cortes. El degradado de morado a turquesa le da un toque moderno y dinámico, muy alejado de la imagen seria de un banco. Y el "BBVA" pequeño de abajo está ahí para dar confianza, pero sin quitarle protagonismo a Flow.</p>
+            <div class="brand-callout">
+              <h4>Área de seguridad</h4>
+              <p>Se recomienda mantener un espacio libre equivalente a la altura de la letra "o" alrededor de todo el logotipo. Ningún elemento gráfico o tipográfico debe invadir esta zona.</p>
+              <ul>
+                <li>Impresión: 25 mm de ancho.</li>
+                <li>Pantalla: 120 px de ancho.</li>
+              </ul>
+            </div>
+          </div>
+          <img src="assets/images/brand-logo-safety-zone.jpg" alt="Zona de seguridad del logo Flow" class="brand-slide-img">
+        </div>
+
+        <!-- 4. Paleta de color -->
+        <div class="brand-slide">
+          <span class="brand-slide-kicker">Paleta de color</span>
+          <p class="brand-slide-text">Los morados y azules le dan seguridad (que se note que hay un banco detrás), y los turquesas meten esa energía joven y fresca. El degradado conecta ambos mundos: lo serio de BBVA con la actitud más despreocupada de la Gen Z.</p>
+          <div class="color-palette">
+            <div class="color-group">
+              <span class="color-group-label">Primarios</span>
+              <div class="swatch" style="background:#004381;">#004381</div>
+              <div class="swatch" style="background:#6232A6;">#6232A6</div>
+            </div>
+            <div class="color-group">
+              <span class="color-group-label">Secundarios</span>
+              <div class="swatch" style="background:#7663F2;">#7663F2</div>
+              <div class="swatch" style="background:#6DE5F2; color:#2b2333;">#6DE5F2</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Psicología de color -->
+        <div class="brand-slide">
+          <span class="brand-slide-kicker">Psicología de color</span>
+          <div class="psychology-list">
+            <div class="psychology-row"><span class="swatch-sm" style="background:#004381;" aria-hidden="true"></span><p>Confianza, estabilidad, seguridad.</p></div>
+            <div class="psychology-row"><span class="swatch-sm" style="background:#6232A6;" aria-hidden="true"></span><p>Creatividad, innovación.</p></div>
+            <div class="psychology-row"><span class="swatch-sm" style="background:#7663F2;" aria-hidden="true"></span><p>Equilibrio entre creatividad y tranquilidad, sensibilidad, modernidad y transformación.</p></div>
+            <div class="psychology-row"><span class="swatch-sm" style="background:#6DE5F2;" aria-hidden="true"></span><p>Frescura, comunicación, claridad.</p></div>
+          </div>
+        </div>
+
+        <!-- 6. Tipografía -->
+        <div class="brand-slide">
+          <span class="brand-slide-kicker">Tipografía</span>
+          <div class="type-specimen-grid">
+            <div class="type-specimen">
+              <span class="type-tag">Primario</span>
+              <h3 class="type-name" style="font-family:'Museo Moderno', cursive;">Museo Moderno</h3>
+              <p class="type-desc">Es una tipografía sans serif de estilo geométrico y contemporáneo, caracterizada por sus formas redondeadas y limpias. Transmite creatividad, modernidad y cercanía.</p>
+              <p class="type-sample" style="font-family:'Museo Moderno', cursive;">Aa Bb Cc — 0123456789</p>
+            </div>
+            <div class="type-specimen">
+              <span class="type-tag">Secundario</span>
+              <h3 class="type-name" style="font-family:'Source Sans 3', sans-serif;">Source Sans Pro</h3>
+              <p class="type-desc">Diseñada para ofrecer una excelente legibilidad. Su estilo limpio, moderno y profesional transmite claridad y confianza.</p>
+              <p class="type-sample" style="font-family:'Source Sans 3', sans-serif;">Aa Bb Cc — 0123456789</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Variaciones del logo -->
+        <div class="brand-slide brand-slide--image">
+          <img src="assets/images/brand-logo-variaciones.jpg" alt="Variaciones del logo Flow" class="brand-slide-img">
+        </div>
+
+        <!-- 8. Versiones de color -->
+        <div class="brand-slide brand-slide--image">
+          <img src="assets/images/brand-logo-versiones-color.jpg" alt="Versiones de color del logo Flow" class="brand-slide-img">
+        </div>
+
+        <!-- 9. Positivo y negativo -->
+        <div class="brand-slide brand-slide--image">
+          <img src="assets/images/brand-logo-positivo-negativo.jpg" alt="Logo Flow en positivo y negativo" class="brand-slide-img">
+        </div>
+
+        <!-- 10. App -->
+        <div class="brand-slide brand-slide--image">
+          <img src="assets/images/brand-app.jpg" alt="Aplicación de la marca Flow en la app" class="brand-slide-img">
+        </div>
+
+        <!-- 11. Smart TV -->
+        <div class="brand-slide brand-slide--image">
+          <img src="assets/images/brand-smart-tv.jpg" alt="Aplicación de la marca Flow en Smart TV" class="brand-slide-img">
+        </div>
+
+        <!-- 12. Instagram / redes sociales -->
+        <div class="brand-slide brand-slide--image">
+          <img src="assets/images/brand-instagram.jpg" alt="Aplicación de la marca Flow en Instagram" class="brand-slide-img">
+        </div>
+
+        <!-- 13. TikTok -->
+        <div class="brand-slide brand-slide--image">
+          <img src="assets/images/brand-tiktok.jpg" alt="Aplicación de la marca Flow en TikTok" class="brand-slide-img">
+        </div>
+
+        <!-- 14. Merchandising -->
+        <div class="brand-slide brand-slide--image">
+          <img src="assets/images/brand-merchandising.jpg" alt="Merchandising de la marca Flow" class="brand-slide-img">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ BUYER PERSONA ============ -->
+    <section class="section-block">
+      <div class="container">
+        <h2>Buyer Persona</h2>
+        <p class="section-lead">Dos personas reales del target de Flow: distintas en edad e ingresos, pero con la misma frustración de fondo con la banca tradicional.</p>
+
+        <article class="persona-card">
+          <div class="persona-photo">
+            <img src="assets/images/persona-sofia.jpg" alt="Retrato de Sofía Herrera">
+          </div>
+          <div class="persona-info">
+            <div class="persona-header">
+              <h3>Sofía Herrera <span>· 22 años</span></h3>
+              <p class="persona-role">Estudiante de ADE e influencer en Instagram</p>
+            </div>
+            <blockquote class="persona-quote">"Ahorra en Revolut y quiere invertir, pero nadie le explica cómo sin tratarla como si fuera tonta."</blockquote>
+            <div class="persona-blocks">
+              <div class="persona-block">
+                <h4>Contexto vital</h4>
+                <p>Prácticas en consultora (700 €/mes) + ingresos variables por colaboraciones de marca (150-300 €/mes). Último año de carrera, incertidumbre laboral. Piso compartido en Lavapiés con dos amigas. Ingresos irregulares que no sabe cómo gestionar en un solo lugar.</p>
+              </div>
+              <div class="persona-block">
+                <h4>Relación con el dinero</h4>
+                <p>Gasto en food delivery, Zara + Vinted y viajes low cost. Ahorra de forma impulsiva cuando llega el pago de una colaboración. Guarda 800 € en Revolut "por si acaso". Miedo a perder dinero invertido con su situación laboral inestable.</p>
+              </div>
+              <div class="persona-block">
+                <h4>Relación con la banca</h4>
+                <p>Santander heredado de sus padres, solo para cobrar la nómina de prácticas. Revolut para todo lo demás. Le incomoda recibir emails con "Estimada cliente" a los 22 años. Conoce imagin, pero le parece "lo mismo con peor diseño".</p>
+              </div>
+              <div class="persona-block">
+                <h4>Jobs to be done</h4>
+                <p>Unificar sus ingresos irregulares en un solo dashboard, sentirse capaz con su dinero sin culpa ni agobio, y poder hablar de sus finanzas con la misma naturalidad con la que habla de cualquier otra cosa.</p>
+              </div>
+              <div class="persona-block">
+                <h4>Pains / Gains</h4>
+                <p>Evita la jerga inaccesible y los bancos que la tratan como una niña. Persigue un dashboard unificado, separación automática de ingresos y empezar a invertir sin agobio.</p>
+              </div>
+              <div class="persona-block">
+                <h4>Decisiones de marca</h4>
+                <p>Naming corto, memeable y tech. Tono de amiga que sabe de finanzas, sin condescendencia. Visual turquesa fresco y moderno, con gráficas limpias y números bonitos.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="persona-card persona-card--reverse">
+          <div class="persona-photo">
+            <img src="assets/images/persona-hector.jpg" alt="Retrato de Héctor Vidal">
+          </div>
+          <div class="persona-info">
+            <div class="persona-header">
+              <h3>Héctor Vidal <span>· 25 años</span></h3>
+              <p class="persona-role">Developer junior en una startup fintech</p>
+            </div>
+            <blockquote class="persona-quote">"Invierte desde el móvil y odia los bancos que le hablan como si tuviera 50 años."</blockquote>
+            <div class="persona-blocks">
+              <div class="persona-block">
+                <h4>Contexto vital</h4>
+                <p>Primer empleo estable (8 meses) en una startup fintech de Madrid. Piso compartido en Chamberí, 550 €/mes. Inició inversiones en fondos mutuos hace 6 meses. Un fraude con la tarjeta de su banco clásico le generó desconfianza.</p>
+              </div>
+              <div class="persona-block">
+                <h4>Relación con el dinero</h4>
+                <p>Alquiler 33%, comida 17%, inversión 9%, ocio 12% de su presupuesto. Ahorra 150-200 €/mes entre Trade Republic y Revolut al 4%. Su miedo es un bloqueo de cuenta sin previo aviso; su seguridad, el control total en tiempo real desde el móvil.</p>
+              </div>
+              <div class="persona-block">
+                <h4>Relación con la banca</h4>
+                <p>BBVA heredado de sus padres. Fricciones con el diseño anticuado y la comisión de 3 €/mes. Usa Revolut a diario, Bizum y, como experimento, Coinbase.</p>
+              </div>
+              <div class="persona-block">
+                <h4>Jobs to be done</h4>
+                <p>Gestionar ahorro, inversión y fondo de emergencia en un solo lugar, comprar fondos en pocos clics, y sentirse inteligente y en control de su dinero, sin paternalismo.</p>
+              </div>
+              <div class="persona-block">
+                <h4>Pains / Gains</h4>
+                <p>Evita comisiones opacas, bloqueos de cuenta y apps anticuadas. Persigue una app unificada, compra automática de fondos y alertas inteligentes.</p>
+              </div>
+              <div class="persona-block">
+                <h4>Decisiones de marca</h4>
+                <p>Naming corto, tech y diferente a cualquier banco. Tono de igual a igual, sin jerga bancaria. Visual con turquesa y morado, tipografía Space Grotesk y cards limpias con data viz simple.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
       </div>
     </section>
   </main>
@@ -86,6 +280,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/main.js?v=1"></script>
+  <script src="assets/js/main.js?v=2"></script>
 </body>
 </html>

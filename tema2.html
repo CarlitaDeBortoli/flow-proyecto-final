@@ -8,13 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Museo+Moderno:wght@600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=1">
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
 </head>
 <body>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="brand">flow<span class="brand-tag">Proyecto final</span></a>
+      <a href="index.html" class="brand"><img src="assets/images/logo-flow.png" alt="Flow" class="brand-logo-img"><span class="brand-tag">Proyecto final</span></a>
       <nav class="main-nav" aria-label="Navegación principal">
         <ul>
           <li><a href="tema1.html">Tema 1 · Creatividad Digital</a></li>
@@ -27,37 +27,157 @@
   </header>
 
   <main>
-    <section class="tema-hero">
+    <section class="tema-hero" style="background-image:url('assets/images/header-tema2.jpg');">
+      <h1>Usability, UX &amp; Analytics</h1>
+    </section>
+
+    <!-- ============ ÁRBOL DE CONTENIDOS ============ -->
+    <section class="section-block">
       <div class="container">
-        <p class="breadcrumb"><a href="index.html">Inicio</a> / Tema 2</p>
-        <p class="eyebrow">Tema 2</p>
-        <h1>Usability, UX &amp; Analytics</h1>
-        <p>Cómo se piensa una web antes de programarla: qué necesita tener, cómo se organiza y cómo se sabe si funciona una vez publicada.</p>
+        <h2>Árbol de Contenidos de la Web</h2>
+        <p class="section-lead">La estructura completa del sitio de Flow: páginas principales, flujos de formulario paso a paso y páginas legales/de soporte.</p>
+
+        <div class="sitemap-tree">
+
+          <div class="sitemap-page">
+            <ul class="sitemap-tags"><li>MAIN</li></ul>
+            <h4>Flow Landing</h4>
+            <ul class="sitemap-steps">
+              <li>Header</li>
+              <li>Beneficios</li>
+              <li>Simuladores</li>
+              <li>Features</li>
+              <li>FAQ</li>
+              <li>Footer</li>
+            </ul>
+          </div>
+
+          <div class="sitemap-page">
+            <ul class="sitemap-tags"><li>MAIN</li></ul>
+            <h4>Sobre Nosotros</h4>
+            <ul class="sitemap-steps">
+              <li>Header</li>
+              <li>Nuestra Misión</li>
+              <li>Detrás de Flow, BBVA</li>
+              <li>Footer</li>
+            </ul>
+          </div>
+
+          <div class="sitemap-page">
+            <ul class="sitemap-tags"><li>MAIN</li></ul>
+            <h4>Nuestros Productos</h4>
+            <ul class="sitemap-steps">
+              <li>Header</li>
+              <li>Opción de Producto</li>
+              <li>Personalizar Tarjeta</li>
+              <li>Footer</li>
+            </ul>
+            <div class="sitemap-subflow">
+              <span class="sitemap-subflow-label">Subflujo · Formulario personalización de tarjeta</span>
+              <ul class="sitemap-steps">
+                <li>Elige tu diseño</li>
+                <li>Personaliza</li>
+                <li>Confirma tu pedido</li>
+                <li>Tu solicitud está lista</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="sitemap-page">
+            <ul class="sitemap-tags"><li>MAIN</li></ul>
+            <h4>Aprende con Flow</h4>
+            <ul class="sitemap-steps">
+              <li>Header</li>
+              <li>Cursos de Aprendizaje</li>
+              <li>Footer</li>
+            </ul>
+          </div>
+
+          <div class="sitemap-page">
+            <ul class="sitemap-tags"><li>MAIN</li></ul>
+            <h4>Abre tu Cuenta Online</h4>
+            <ul class="sitemap-steps">
+              <li>Header</li>
+              <li>Abre tu Cuenta Hoy</li>
+              <li>¿Qué necesitas?</li>
+              <li>Empezar Ahora</li>
+              <li>Footer</li>
+            </ul>
+            <div class="sitemap-subflow">
+              <span class="sitemap-subflow-label">Subflujo · Formulario de inscripción</span>
+              <ul class="sitemap-steps">
+                <li>Datos personales</li>
+                <li>Foto DNI/NIE</li>
+                <li>Biometría facial</li>
+                <li>Confirmación de cuenta creada</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="sitemap-page">
+            <ul class="sitemap-tags"><li>MAIN</li></ul>
+            <h4>Acceso a Clientes</h4>
+            <ul class="sitemap-steps">
+              <li>Formulario de acceso</li>
+              <li>Login (email y contraseña)</li>
+              <li>¿Olvidaste tu contraseña?</li>
+            </ul>
+          </div>
+
+          <div class="sitemap-page">
+            <ul class="sitemap-tags"><li>MAIN</li></ul>
+            <h4>Únete a Flow</h4>
+            <ul class="sitemap-steps">
+              <li>Formulario de inscripción</li>
+            </ul>
+            <div class="sitemap-subflow">
+              <span class="sitemap-subflow-label">Subflujo · Formulario de inscripción</span>
+              <ul class="sitemap-steps">
+                <li>Datos personales</li>
+                <li>Foto DNI/NIE</li>
+                <li>Biometría facial</li>
+                <li>Confirmación de cuenta creada</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="sitemap-footer-cluster">
+            <div class="sitemap-footer-group">
+              <h5>Section · Legal</h5>
+              <ul>
+                <li>Términos y Condiciones</li>
+                <li>Política de Privacidad</li>
+                <li>Política de Cookies</li>
+                <li>Aviso Legal</li>
+              </ul>
+            </div>
+            <div class="sitemap-footer-group">
+              <h5>Section · Soporte</h5>
+              <ul>
+                <li>Reclamaciones</li>
+                <li>Acuerdos legales</li>
+                <li>Privacidad</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
+    <!-- ============ WIREFRAMES ============ -->
     <section class="section-block">
       <div class="container">
-        <h2>Contenido de este tema</h2>
-        <p class="section-lead">Esta sección se está terminando de redactar.</p>
-        <div class="placeholder-list">
-          <div class="placeholder-item">
-            <strong>Planificación de los requisitos del sitio web</strong>
-            <span class="placeholder-tag">En desarrollo</span>
-          </div>
-          <div class="placeholder-item">
-            <strong>Elaboración del árbol de contenido</strong>
-            <span class="placeholder-tag">En desarrollo</span>
-          </div>
-          <div class="placeholder-item">
-            <strong>Creación de Wireframes</strong>
-            <span class="placeholder-tag">En desarrollo</span>
-          </div>
-          <div class="placeholder-item">
-            <strong>Elaboración de un plan de medición</strong>
-            <span class="placeholder-tag">En desarrollo</span>
-          </div>
-        </div>
+        <h2>Wireframes</h2>
+        <div class="empty-block"></div>
+      </div>
+    </section>
+
+    <!-- ============ PLAN DE MEDICIÓN ============ -->
+    <section class="section-block">
+      <div class="container">
+        <h2>Plan de Medición</h2>
+        <div class="empty-block"></div>
       </div>
     </section>
   </main>
@@ -68,6 +188,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/main.js?v=1"></script>
+  <script src="assets/js/main.js?v=2"></script>
 </body>
 </html>
