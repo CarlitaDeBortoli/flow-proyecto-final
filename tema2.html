@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Museo+Moderno:wght@600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=2">
+  <link rel="stylesheet" href="assets/css/style.css?v=3">
 </head>
 <body>
 
@@ -37,130 +37,113 @@
         <h2>Árbol de Contenidos de la Web</h2>
         <p class="section-lead">La estructura completa del sitio de Flow: páginas principales, flujos de formulario paso a paso y páginas legales/de soporte.</p>
 
-        <div class="sitemap-tree">
+        <div class="flow-legend">
+          <span><i style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#fff;border:2px solid var(--color-primary);margin-right:6px;"></i>Página principal</span>
+          <span><i style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#fdf3fa;border:1px solid #f0cdea;margin-right:6px;"></i>Paso de formulario / subflujo</span>
+          <span>Las líneas muestran la profundidad real de navegación, igual que en el mapa de Octopus.</span>
+        </div>
 
-          <div class="sitemap-page">
-            <ul class="sitemap-tags"><li>MAIN</li></ul>
-            <h4>Flow Landing</h4>
-            <ul class="sitemap-steps">
-              <li>Header</li>
-              <li>Beneficios</li>
-              <li>Simuladores</li>
-              <li>Features</li>
-              <li>FAQ</li>
-              <li>Footer</li>
-            </ul>
-          </div>
+        <div class="flow-tree-wrap">
+          <div class="flow-tree">
 
-          <div class="sitemap-page">
-            <ul class="sitemap-tags"><li>MAIN</li></ul>
-            <h4>Sobre Nosotros</h4>
-            <ul class="sitemap-steps">
-              <li>Header</li>
-              <li>Nuestra Misión</li>
-              <li>Detrás de Flow, BBVA</li>
-              <li>Footer</li>
-            </ul>
-          </div>
+            <div class="flow-root">
+              <div class="flow-node flow-node--root flow-node--parent">
+                <h5>Flow Landing</h5>
+                <ul><li>Header</li><li>Beneficios</li><li>Simuladores</li><li>Features</li><li>FAQ</li><li>Footer</li></ul>
+              </div>
+            </div>
 
-          <div class="sitemap-page">
-            <ul class="sitemap-tags"><li>MAIN</li></ul>
-            <h4>Nuestros Productos</h4>
-            <ul class="sitemap-steps">
-              <li>Header</li>
-              <li>Opción de Producto</li>
-              <li>Personalizar Tarjeta</li>
-              <li>Footer</li>
-            </ul>
-            <div class="sitemap-subflow">
-              <span class="sitemap-subflow-label">Subflujo · Formulario personalización de tarjeta</span>
-              <ul class="sitemap-steps">
-                <li>Elige tu diseño</li>
-                <li>Personaliza</li>
-                <li>Confirma tu pedido</li>
-                <li>Tu solicitud está lista</li>
-              </ul>
+            <div class="flow-level">
+
+              <div class="flow-branch">
+                <div class="flow-node">
+                  <h5>Sobre Nosotros</h5>
+                  <ul><li>Header</li><li>Nuestra Misión</li><li>Detrás de Flow, BBVA</li><li>Footer</li></ul>
+                </div>
+              </div>
+
+              <div class="flow-branch">
+                <div class="flow-node flow-node--parent">
+                  <h5>Nuestros Productos</h5>
+                  <ul><li>Header</li><li>Opción de Producto</li><li>Personalizar Tarjeta</li><li>Footer</li></ul>
+                </div>
+                <div class="flow-level">
+                  <div class="flow-branch">
+                    <div class="flow-node flow-node--parent">
+                      <h5>Formulario personalización de tarjeta</h5>
+                    </div>
+                    <div class="flow-level">
+                      <div class="flow-branch"><div class="flow-node flow-node--leaf"><h5>Elige tu diseño</h5></div></div>
+                      <div class="flow-branch"><div class="flow-node flow-node--leaf"><h5>Personaliza</h5></div></div>
+                      <div class="flow-branch"><div class="flow-node flow-node--leaf"><h5>Confirma tu pedido</h5></div></div>
+                      <div class="flow-branch"><div class="flow-node flow-node--leaf"><h5>Tu solicitud está lista</h5></div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flow-branch">
+                <div class="flow-node">
+                  <h5>Aprende con Flow</h5>
+                  <ul><li>Header</li><li>Cursos de Aprendizaje</li><li>Footer</li></ul>
+                </div>
+              </div>
+
+              <div class="flow-branch">
+                <div class="flow-node flow-node--parent">
+                  <h5>Abre tu Cuenta Online</h5>
+                  <ul><li>Header</li><li>Abre tu Cuenta Hoy</li><li>¿Qué necesitas?</li><li>Empezar Ahora</li><li>Footer</li></ul>
+                </div>
+                <div class="flow-level">
+                  <div class="flow-branch"><div class="flow-node flow-node--leaf"><h5>Formulario de Inscripción</h5><ul><li>Datos personales</li></ul></div></div>
+                  <div class="flow-branch"><div class="flow-node flow-node--leaf"><h5>Formulario de Inscripción</h5><ul><li>Foto DNI/NIE</li></ul></div></div>
+                  <div class="flow-branch"><div class="flow-node flow-node--leaf"><h5>Formulario de Inscripción</h5><ul><li>Biometría facial</li></ul></div></div>
+                  <div class="flow-branch"><div class="flow-node flow-node--leaf"><h5>Formulario de Inscripción</h5><ul><li>Confirmación de cuenta</li></ul></div></div>
+                </div>
+              </div>
+
+              <div class="flow-branch">
+                <div class="flow-node">
+                  <h5>Acceso a Clientes</h5>
+                  <ul><li>Formulario de acceso</li><li>Login (email y contraseña)</li><li>¿Olvidaste tu contraseña?</li></ul>
+                </div>
+              </div>
+
+              <div class="flow-branch">
+                <div class="flow-node flow-node--parent">
+                  <h5>Únete a Flow</h5>
+                  <ul><li>Formulario de inscripción</li></ul>
+                </div>
+                <div class="flow-level">
+                  <div class="flow-branch"><div class="flow-node flow-node--leaf"><h5>Formulario de Inscripción</h5><ul><li>Datos personales</li></ul></div></div>
+                  <div class="flow-branch"><div class="flow-node flow-node--leaf"><h5>Formulario de Inscripción</h5><ul><li>Foto DNI/NIE</li></ul></div></div>
+                  <div class="flow-branch"><div class="flow-node flow-node--leaf"><h5>Formulario de Inscripción</h5><ul><li>Biometría facial</li></ul></div></div>
+                  <div class="flow-branch"><div class="flow-node flow-node--leaf"><h5>Formulario de Inscripción</h5><ul><li>Confirmación de cuenta</li></ul></div></div>
+                </div>
+              </div>
+
             </div>
           </div>
+        </div>
 
-          <div class="sitemap-page">
-            <ul class="sitemap-tags"><li>MAIN</li></ul>
-            <h4>Aprende con Flow</h4>
-            <ul class="sitemap-steps">
-              <li>Header</li>
-              <li>Cursos de Aprendizaje</li>
-              <li>Footer</li>
+        <div class="sitemap-footer-cluster">
+          <div class="sitemap-footer-group">
+            <h5>Section · Legal</h5>
+            <ul>
+              <li>Términos y Condiciones</li>
+              <li>Política de Privacidad</li>
+              <li>Política de Cookies</li>
+              <li>Aviso Legal</li>
             </ul>
           </div>
-
-          <div class="sitemap-page">
-            <ul class="sitemap-tags"><li>MAIN</li></ul>
-            <h4>Abre tu Cuenta Online</h4>
-            <ul class="sitemap-steps">
-              <li>Header</li>
-              <li>Abre tu Cuenta Hoy</li>
-              <li>¿Qué necesitas?</li>
-              <li>Empezar Ahora</li>
-              <li>Footer</li>
-            </ul>
-            <div class="sitemap-subflow">
-              <span class="sitemap-subflow-label">Subflujo · Formulario de inscripción</span>
-              <ul class="sitemap-steps">
-                <li>Datos personales</li>
-                <li>Foto DNI/NIE</li>
-                <li>Biometría facial</li>
-                <li>Confirmación de cuenta creada</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="sitemap-page">
-            <ul class="sitemap-tags"><li>MAIN</li></ul>
-            <h4>Acceso a Clientes</h4>
-            <ul class="sitemap-steps">
-              <li>Formulario de acceso</li>
-              <li>Login (email y contraseña)</li>
-              <li>¿Olvidaste tu contraseña?</li>
+          <div class="sitemap-footer-group">
+            <h5>Section · Soporte</h5>
+            <ul>
+              <li>Reclamaciones</li>
+              <li>Acuerdos legales</li>
+              <li>Privacidad</li>
             </ul>
           </div>
-
-          <div class="sitemap-page">
-            <ul class="sitemap-tags"><li>MAIN</li></ul>
-            <h4>Únete a Flow</h4>
-            <ul class="sitemap-steps">
-              <li>Formulario de inscripción</li>
-            </ul>
-            <div class="sitemap-subflow">
-              <span class="sitemap-subflow-label">Subflujo · Formulario de inscripción</span>
-              <ul class="sitemap-steps">
-                <li>Datos personales</li>
-                <li>Foto DNI/NIE</li>
-                <li>Biometría facial</li>
-                <li>Confirmación de cuenta creada</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="sitemap-footer-cluster">
-            <div class="sitemap-footer-group">
-              <h5>Section · Legal</h5>
-              <ul>
-                <li>Términos y Condiciones</li>
-                <li>Política de Privacidad</li>
-                <li>Política de Cookies</li>
-                <li>Aviso Legal</li>
-              </ul>
-            </div>
-            <div class="sitemap-footer-group">
-              <h5>Section · Soporte</h5>
-              <ul>
-                <li>Reclamaciones</li>
-                <li>Acuerdos legales</li>
-                <li>Privacidad</li>
-              </ul>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
@@ -188,6 +171,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/main.js?v=2"></script>
+  <script src="assets/js/main.js?v=3"></script>
 </body>
 </html>
