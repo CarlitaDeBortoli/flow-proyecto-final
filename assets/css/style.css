@@ -385,6 +385,14 @@ p { margin: 0 0 1em; }
   font-size: .92rem;
 }
 
+/* ---------- Wireframes (Tema 2) ---------- */
+.wireframe-group { margin-bottom: 48px; }
+.wireframe-group:last-child { margin-bottom: 0; }
+.wireframe-caption { display: block; font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--color-primary); margin-bottom: 14px; }
+.wireframe-desktop-img { width: 100%; height: auto; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: 0 24px 55px -22px rgba(97, 47, 161, .3); display: block; }
+.wireframe-mobile-row { display: flex; gap: 24px; flex-wrap: wrap; }
+.wireframe-mobile-img { width: 300px; max-width: 100%; height: auto; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: 0 24px 55px -22px rgba(97, 47, 161, .3); display: block; }
+
 /* ---------- Vista móvil embebida (Tema 3) ---------- */
 .phone-mock-wrap { display: flex; flex-direction: column; align-items: center; gap: 20px; margin-top: 20px; }
 .phone-mock {
